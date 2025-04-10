@@ -1,0 +1,32 @@
+#Timothy Foster, 4/9/25, Favorite Saying Program
+
+#Import the tkinter module.
+import tkinter
+
+#Create the SayingGUI class.
+class SayingGUI:
+
+    #Initialize the class.
+    def __init__(self):
+
+        #Create the main window.
+        self.main_window = tkinter.Tk()
+
+        #Give the window a title.
+        self.main_window.title("My favorite saying")
+
+        #Display a message using label from tkinter.
+        self.label = tkinter.Label(self.main_window,
+                                   text = "'The only thing to fear is fear itself.' - Franklin Roosevelt",
+                                   borderwidth=5,
+                                   relief="ridge")
+
+        #Pack the label message.
+        self.label.pack()
+
+        #Run the tkinter mainloop.
+        tkinter.mainloop()
+
+#Use the SayingGUI class.
+if __name__ == "__main__":
+    my_gui = SayingGUI()
